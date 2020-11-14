@@ -1,0 +1,56 @@
+{
+    "name": "webgarden/php-boilerplate",
+    "description": "A boilerplate for new composer-based PHP projects",
+    "keywords": ["boilerplate", "skeleton"],
+    "require": {
+        "php": "^7.4|^8.0",
+        "symfony/polyfill-php80": "^1.20"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrzej Kupczyk",
+            "email": "kontakt@andrzejkupczyk.pl",
+            "homepage": "https://andrzejkupczyk.pl"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/thewebgarden/php-boilerplate/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Package\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vendor\\Package\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "cs:fix": "tools/php-cs-fixer fix --ansi --diff",
+        "tests": "tools/phpunit.phar",
+        "analyse": [
+            "tools/phpcs --standard=PSR2 src",
+            "tools/phpstan analyse --no-progress",
+            "tools/psalm",
+            "@cs:fix --dry-run"
+        ],
+        "post-create-project-cmd": [
+            "mkdir src tests",
+            "phive install"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
