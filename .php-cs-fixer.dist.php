@@ -1,16 +1,18 @@
 <?php
 /*
  * This document has been generated with
- * https://mlocati.github.io/php-cs-fixer-configurator/#version:2.16.1|configurator
+ * https://mlocati.github.io/php-cs-fixer-configurator/#version:3.0.2|configurator
  * you can change this configuration by importing this file.
  */
-return PhpCsFixer\Config::create()
+$config = new PhpCsFixer\Config();
+return $config
     ->setRiskyAllowed(true)
     ->setRules([
-        '@PSR2' => true,
+        '@PSR12' => true,
         '@PhpCsFixer' => true,
         '@Symfony' => true,
         'blank_line_before_statement' => ['statements' => ['break', 'continue', 'declare', 'return', 'throw', 'try', 'if']],
+        'concat_space' => ['spacing' => 'one'],
         'declare_strict_types' => true,
         'phpdoc_to_comment' => false,
         'yoda_style' => ['equal' => false, 'identical' => false, 'less_and_greater' => false],
