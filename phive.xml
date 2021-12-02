@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phive xmlns="https://phar.io/phive">
-  <phar name="php-cs-fixer" version="^3.0.2" installed="3.0.2" location="./tools/php-cs-fixer" copy="false"/>
-  <phar name="phpcs" version="^3.5.8" installed="3.6.0" location="./tools/phpcs" copy="false"/>
-  <phar name="phpstan" version="^0.12.37" installed="0.12.96" location="./tools/phpstan" copy="false"/>
-  <phar name="phpunit" version="^9.3.7" installed="9.5.8" location="./tools/phpunit.phar" copy="false"/>
-  <phar name="psalm" version="^3.13.1" installed="3.18.2" location="./tools/psalm" copy="false"/>
+  <phar name="php-cs-fixer" url="https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v3.3.2/php-cs-fixer.phar" version="3.3.2" installed="3.3.2" location="./tools/php-cs-fixer" copy="false"/>
+  <phar name="phpcs" version="^3.6.1" installed="3.6.1" location="./tools/phpcs" copy="false"/>
+  <phar name="phpstan" url="https://github.com/phpstan/phpstan/releases/download/1.2.0/phpstan.phar" version="1.2.0" installed="1.2.0" location="./tools/phpstan" copy="false"/>
+  <phar name="phpunit" version="^9.5.10" installed="9.5.10" location="./tools/phpunit.phar" copy="false"/>
+  <phar name="psalm" url="https://github.com/vimeo/psalm/releases/download/4.13.1/psalm.phar" version="4.13.1" installed="4.13.1" location="./tools/psalm" copy="false"/>
 </phive>
