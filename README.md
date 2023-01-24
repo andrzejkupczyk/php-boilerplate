@@ -9,8 +9,7 @@ A boilerplate for new composer-based PHP projects.
 ## Dependencies
 
 This package aims to be as small and simple as possible. 
-The only requirements are PHP 7.4 and [PHP 8.0 polyfill](https://github.com/symfony/polyfill-php80), 
-hence in order to add PHPUnit, PHP CS Fixer and [some other](phive.xml) frequently used development tools, 
+In fact, the only requirement is PHP 8.2, hence in order to add PHPUnit, PHP CS Fixer and [some other](phive.xml) frequently used development tools, 
 it relies on [PHIVE](https://phar.io/).
 
 ## Getting Started
@@ -26,15 +25,11 @@ $ phive --version
 
 #### Via [Composer Create-Project] (recommended)
 
-> You can use Composer to create new projects from an existing package.
-
 ```bash
 $ php composer.phar create-project --prefer-source --remove-vcs webgarden/php-boilerplate new-project
 ```  
 
 #### Using [GitHub Templates]
-
-> You can generate a new repository with the same directory structure and files as an existing repository.
 
 :link: https://github.com/thewebgarden/php-boilerplate/generate
 

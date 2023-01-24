@@ -3,7 +3,7 @@
     "description": "A boilerplate for new composer-based PHP projects",
     "keywords": ["boilerplate", "skeleton"],
     "require": {
-        "php": "^8.0"
+        "php": "^8.2"
     },
     "license": "MIT",
     "authors": [
